@@ -1,0 +1,32 @@
+// const http=require("http");
+// const fs=require("fs");
+ 
+// function myHandler(req,res){
+//     if (req.url === "/favicon.ico") return res.end()
+//         const log = `${Date.now()}: ${req.method} ${req.url} New Req Received\n`;
+//         fs.appendFile("log.txt", log, (err, data) =>{
+//             switch(req.url){
+//                 case "/":
+//                 if (req.method === 'GET') res.end('Homepage')
+//                 break
+//                 case "/about":
+//                 res.end("i am pranjal")
+//                 break
+//                 case "/signup":
+//                     if (req.method === 'GET') res.end('sign up form');
+//                     else if (req.method === 'GET') {
+//                         // DB QUERY
+//                         res.end("Success")
+//                     }
+//                 default:
+//                     res.end("404 Not Found")
+//             }
+//             // res.end("hello from server")
+//         });
+// }
+ 
+// //this arrow function process the incoming request
+// const myServer = http.createServer(myHandler)
+ 
+// myServer.listen(8000, () => console.log("server started.."))
+
